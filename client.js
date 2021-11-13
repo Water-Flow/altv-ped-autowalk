@@ -38,7 +38,7 @@ export function TaskWalkToWaypoint()
 {
     let blip = game.getFirstBlipInfoId(8);
     if (!game.doesBlipExist(blip)) 
-        return null;
+        return;
 
     let coords = game.getBlipCoords(blip);
     if(coords == null)

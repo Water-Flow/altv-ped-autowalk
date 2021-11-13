@@ -2,7 +2,8 @@ import alt from 'alt';
 import game from 'natives';
 
 let interval = null;
-function TaskWalkStraight(toggle) 
+
+export function TaskWalkStraight(toggle) // put inside a tick event or interval
 {
     if(!toggle) 
     {
@@ -33,7 +34,7 @@ function TaskWalkStraight(toggle)
 }
 
 
-function TaskWalkToWaypoint() 
+export function TaskWalkToWaypoint() 
 {
     let blip = game.getFirstBlipInfoId(8);
     if (!game.doesBlipExist(blip)) 
